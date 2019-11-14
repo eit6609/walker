@@ -1,0 +1,38 @@
+{
+  "name": "@eit6609/walker",
+  "version": "1.0.0",
+  "description": "A file and directory walker inspired by Python's os.walk()",
+  "keywords": [
+    "file",
+    "directory",
+    "python"
+  ],
+  "Author": "Dario Morandini",
+  "scripts": {
+    "ci": "ENV=ci eslint src examples/**/code && ENV=ci istanbul cover --root src/ jasmine",
+    "cover": "ENV=test istanbul cover --root src/ jasmine JASMINE_CONFIG_PATH=spec/support/jasmine.all.json",
+    "lint": "ENV=test eslint src",
+    "test": "ENV=test jasmine",
+    "test-integration": "ENV=test jasmine JASMINE_CONFIG_PATH=spec/support/jasmine.integration.json"
+  },
+  "homepage": "https://github.com/eit6609/walker.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eit6609/walker.git"
+  },
+  "main": "src/walker.js",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "jasmine-expect": "^3.6.0",
+    "jasmine-promises": "^0.4.1",
+    "jasmine-spec-reporter": "^3.2.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.1",
+    "lodash": "^4.17.15"
+  }
+}
