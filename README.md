@@ -67,7 +67,7 @@ At every step the iterator yields an array containing three items:
 * an array of strings with the names of the files
 
 ```js
-function walkAsync(dirPath: string): iterator
+function walkAsync(dirPath: string): promise of iterator
 ```
 
 The only diffefrence with `walk()` is that the iterator yelds a *promise* of the result, that needs to be resolved with `await` or `then()`.
