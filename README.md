@@ -9,7 +9,7 @@ Run this to install:
 npm i @eit6609/walker
 ```
 
-# Examples
+## Examples
 
 There are two functions in walker, one synchronous and one asynchronous. The first is the direct translation of Python's
 `os.walk()`, while the latter is more in the Node mainstream. The choice is yours.
@@ -50,7 +50,7 @@ for (const promise of walkAsync('/path/to/dir')) {
 }
 ```
 
-# API Reference
+## API Reference
 
 ```js
 function walk(dirPath: string): iterator
@@ -72,4 +72,4 @@ function walkAsync(dirPath: string): promise of iterator
 
 The only diffefrence with `walk()` is that the iterator yelds a *promise* of the result, that needs to be resolved with `await` or `then()`.
 
-Enjoi!
+Enjoy!
