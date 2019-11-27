@@ -1,6 +1,6 @@
 {
   "name": "@eit6609/walker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A file and directory walker inspired by Python's os.walk()",
   "keywords": [
     "file",
